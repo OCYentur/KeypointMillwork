@@ -1,0 +1,97 @@
+﻿body, .body-container {
+    width:100%;
+    height:auto;
+    margin:0;
+    padding:0;
+}
+
+.unselectable{
+    user-select:none;
+    -webkit-user-select:none;   
+}
+
+#main-contentholder{
+    width:100%;
+    margin:auto;
+}
+
+#head {
+    position:relative;
+    height:11.5vh;
+    width:100%;
+    background:rgba(0,0,0,.2);
+}
+
+#logo {
+    position:relative;
+    top:0;
+    left:0;
+    height:100%;
+    padding:3vh;
+    width:20%;
+    float:left;
+    text-align:center;
+}
+
+    #logo img {
+        width:50%;
+        height:auto;
+    }
+
+#menu{
+    position:fixed;
+    text-align:center;
+    float:left;
+    width:99.9%;
+    background:rgba(0,0,0,.1);
+}
+
+#menu ul {
+    list-style:none;
+
+}
+
+#menu ul li{
+    display:inline-block;
+    padding:3.3vh;
+    margin-left:10vh;
+    font-size:2.5vh;
+    text-transform:uppercase;
+    cursor:pointer;
+    transition:all .2s linear;
+}
+
+#menu ul li:hover {
+    color:orange;
+}
+
+#intro{
+    height:89vh;
+    width:100%;
+    background-color:beige;
+}
+
+#intro-carousel{
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,.3);
+}
+
+#res-slider {
+    position:relative;
+    height: 85vh;
+    width: 100%;
+    overflow: hidden;
+    background: rgba(0,0,0,.8);
+    /*border-top: .3vh solid #fff;*/
+}
+
+[id^="res"]{
+    width:100%;
+    height:auto;
+    background:url(../Content/Images/keypoint.png) 0 0 no-repeat;
+    background-size:contain;
+    background-color:red;
+}
+
+
