@@ -4,29 +4,75 @@
 
 <div id="main-contentholder">
     <div id="intro">
-        <div id="res-slider" class="unselectable">
-            <div id="resCarousel" class="carousel slide text-center" data-ride="carousel">
-                <div class="carousel-inner" role="listbox">
-                    <div class="item"><a href="#"><div id="com1"></div><p class="sl-righttop">Ready On Time</p></a></div>
-                    <div class="item"><a href="#"><div id="com2"></div><p class="sl-leftbot">Elegant Layout</p></a></div>
-                    <div class="item active"><a href="#"><div id="com3"></div><p class="sl-leftbot">All of Type Business Solutions</p></a></div>
-                    <div class="item"><a href="#"><div id="com4"></div><p class="sl-lefttop">State-of-Art Planning</p></a></div>
-                    <div class="item"><a href="#"><div id="com5"></div><p class="sl-rightbot">Modern Appareance</p></a></div>
+        <div id="intro-carousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#intro-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#intro-carousel" data-slide-to="1"></li>
+                <li data-target="#intro-carousel" data-slide-to="2"></li>
+                <li data-target="#intro-carousel" data-slide-to="3"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="../Content/Images/keypoint1.png" alt="Keywork">
                 </div>
-                <ol class="carousel-indicators indicator">
-                    <li data-target="#resCarousel" data-slide-to="0"></li>
-                    <li data-target="#resCarousel" data-slide-to="1"></li>
-                    <li data-target="#resCarousel" data-slide-to="2" class="active"></li>
-                    <li data-target="#resCarousel" data-slide-to="3"></li>
-                    <li data-target="#resCarousel" data-slide-to="4"></li>
-                </ol>
+                <div class="item">
+                    <img src="../Content/Images/keypoint1.png" alt="Keywork">
+                </div>
+                <div class="item">
+                    <img src="../Content/Images/keypoint1.png" alt="Keywork">
+                </div>
+                <div class="item">
+                    <img src="../Content/Images/keypoint1.png" alt="Keywork">
+                </div>
             </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#intro-carousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#intro-carousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </div>
     <div id="about">
-        asd
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Nulla viverra tellus vel condimentum lobortis. Vivamus ut ipsum ut quam ultricies 
+        semper vitae at libero. Duis nec ullamcorper est, eget porta tellus. Duis vestibulum 
+        ligula eu est sodales efficitur. Etiam vestibulum diam dui, vitae convallis felis 
+        ornare eu. Duis non interdum libero. Curabitur malesuada velit eu lectus scelerisque malesuada. 
+        Nam ut nisi tortor. Vestibulum gravida justo et felis tempus, et suscipit est consequat. Donec 
+        finibus mauris nec porttitor accumsan. Fusce sit amet fermentum dolor. Phasellus porta, tellus 
+        quis scelerisque suscipit, diam dui iaculis augue, sed rhoncus est sapien at leo. Quisque interdum
+        condimentum tempor. Vestibulum ac ex nisi. Vestibulum pretium pretium tortor non convallis.</p>
+
+        <p>Aenean sit amet fermentum dui. Praesent pharetra vehicula risus, auctor consectetur velit fermentum in. 
+        Pellentesque viverra turpis in ipsum blandit, aliquet porta turpis finibus. Nunc elementum vehicula diam 
+        sed tempor. Phasellus convallis rhoncus turpis in maximus. Proin a convallis libero, eget molestie velit. 
+        Proin convallis, metus quis auctor mattis, augue lacus egestas metus, volutpat lacinia metus mauris sit amet 
+        nisi. Sed vitae erat eget velit consequat luctus dignissim id nunc. Morbi gravida convallis ipsum id eleifend. 
+        Morbi non pharetra lorem. Sed eget euismod leo. Nunc at felis et sapien malesuada volutpat ac placerat diam. 
+        Donec imperdiet mauris nec eleifend placerat. In eleifend, nunc eget dictum vestibulum, erat magna tristique 
+        orci, et rhoncus erat enim at lorem. Sed scelerisque ligula nec eros aliquam ullamcorper eget in nisl.</p>
+
+        <p>Mauris velit nisl, dapibus vitae pharetra eu, ornare sed erat. Maecenas rutrum blandit lobortis. Curabitur 
+        rhoncus arcu neque, id suscipit turpis consequat ut. Vestibulum feugiat, ipsum nec placerat lacinia, lacus 
+        lorem fringilla justo, nec imperdiet justo arcu eu nibh. Praesent eu neque pulvinar, tempus leo lacinia, 
+        aliquet arcu. Cras at euismod est. Aenean gravida vestibulum lacus nec fringilla. Phasellus dapibus efficitur 
+        hendrerit. Nunc orci arcu, molestie eu lacus et, iaculis faucibus risus. Sed pretium sodales erat non aliquam. 
+        Cras dictum pharetra purus, at porttitor erat consectetur non. Mauris vitae consequat purus, eget sodales massa. 
+        Ut lacinia ex urna, quis fringilla neque cursus at. Ut et sollicitudin ex.</p>
+    </div>
+    <div id="gallery">
     </div>
     <div id="contact">
-        asd
+        <div id="address"><p>18-100 Wilkinson Road, Brampton, ON L6T 4Y9</p></div>
+        <div id="email"><p><a href="mailto:keypoint@zgemi.com" target="_blank">keypoint@zgemi.com</a></p></div>
+        <div id="phone"><p><a href="tel:+19054540111">+1 (905) 454-0111</a></p></div>
     </div>
 </div>

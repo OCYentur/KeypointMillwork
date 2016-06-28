@@ -3,10 +3,30 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Keypoint Millwork" />
+    <meta name="author" content="Omer Yentur" />
+    <meta name="keywords" content="Keypoint, Millwork, Renovation, Kitchen, Countertop" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script>
+		$(function () {
+			$('a[href*="#"]:not([href="#"])').click(function () {
+				if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+					if (target.length) {
+						$('html, body').animate({
+							scrollTop: target.offset().top
+						}, 1000);
+						return false;
+					}
+				}
+			});
+		});
+    </script>
 </head>
 <body>
     <div id="head" class="unselectable">
@@ -15,10 +35,9 @@
         </div>
         <div id="menu" class="">
             <ul>
-                <li>adasd</li>
-                <li>asdasd</li>
-                <li>sdasds</li>
-                <li>asdda</li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#gallery">Projects</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
         </div>
     </div>
