@@ -21,10 +21,49 @@ p:nth-child(3){
     padding-bottom:5vh;
 }
 
-
 .unselectable{
     user-select:none;
     -webkit-user-select:none;   
+}
+
+#loader {
+	position:absolute;
+	top:0;
+	left:0;
+	content:'';
+	height:100vh;
+	width:100%;
+	background-color:beige;
+}
+
+#loader img {
+	position:absolute;
+	width:30%;
+	height:auto;
+	top:30%;
+	left:35%;
+}
+
+img#sawx, img#sawy {
+	position:absolute;
+	width:3.5%;
+	height:auto;
+	animation:spin .2s linear infinite;
+}
+
+img#sawx {
+	top:34.7%;
+	left:50.1%;
+	/*animation-duration:.5s;*/
+}
+
+img#sawy {
+	top:50.7%;
+	left:53.5%;
+}
+
+.body-container {
+	display:none;
 }
 
 #main-contentholder{
@@ -37,6 +76,7 @@ p:nth-child(3){
     height:11.5vh;
     width:100%;
     background:rgba(0,0,0,.2);
+	display:none;
 }
 
 #logo {
@@ -133,4 +173,13 @@ p:nth-child(3){
     src:url(../fonts/LeagueGothic-Regular.otf);
 }
 
+@keyframes spin {
+	0% {transform:rotate(0);}
+	100% {transform:rotate(360deg);}
+}
+
+@-webkit-keyframes spin {
+	0% {-webkit-transform:rotate(0);}
+	100% {-webkit-transform:rotate(360deg);}
+}
 

@@ -13,7 +13,7 @@
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
     <script>
 		$(function () {
-			$('a[href*="#"]:not([href="#"])').click(function () {
+			$('a[href*="#"]:not([href="#intro-carousel"])').click(function () {
 				if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
 					var target = $(this.hash);
 					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -28,7 +28,12 @@
 		});
     </script>
 </head>
-<body>
+<body onload="init()">
+	<div id="loader" class="unselectable">
+		<img src="~/Content/Images/keypointlogo.png" />
+		<img id="sawx" src="~/Content/Images/keypointsaw.png" />
+		<img id="sawy" src="~/Content/Images/keypointsaw.png" />
+	</div>
     <div id="head" class="unselectable">
         <div id="logo">
             <img src="~/Content/Images/keypoint1.png" />
@@ -48,7 +53,19 @@
             <p>&copy; @DateTime.Now.Year - Keypoint Millwork</p>
         </footer>
     </div>
-
+	<script>
+		function init() {
+			var x = setTimeout(load, 2000);
+		}
+		function load() {
+			$(document).ready(function () {
+				$("#loader").fadeOut(500, function () {
+					$("#head").fadeIn(500, function () { }).css('display', 'block');
+					$(".body-container").fadeIn(750, function () { }).css('display', 'block');
+				});
+			});
+		}
+	</script>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
