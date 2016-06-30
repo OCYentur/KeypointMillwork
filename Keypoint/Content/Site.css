@@ -37,8 +37,8 @@ p:nth-child(3){
 	background-color:darkgray;
     outline:none;
     border:none;
-    animation:shadow 2.5s linear;
-    animation-fill-mode:forwards;
+    /*animation:shadow 2.5s linear;
+    animation-fill-mode:forwards;*/
 }
 
 #loader img {
@@ -108,6 +108,7 @@ img#sawy {
     background:rgba(0,0,0,.2);
     z-index:999;
     color:white;
+	transition:all .2s linear;
 }
 
 #menu ul {
@@ -153,8 +154,8 @@ img#sawy {
     margin:0;
     padding:0;
     padding-top:7vh;
-    background:#c32533;
-    color:white;
+    /*background:#c32533;*/
+    color:#000;
     height:102vh;   
 }
 
@@ -164,7 +165,7 @@ img#sawy {
     padding:15vh 6vh 0 6vh;
     height:100vh;
     content:'';
-    background:#999898;
+    /*background:#999898;*/
 }
 
 #gallery section img{
@@ -178,8 +179,15 @@ img#sawy {
     margin:0;
     padding:0;
     padding-top:7vh;
-    background:#2477b2;
+    /*background:#2477b2;*/
     height:100vh;
+	background:silver;
+}
+
+footer {
+	margin:0;
+	padding:0 3vh 0 3vh;
+	font-size:2vh;
 }
 
 /*                              */
