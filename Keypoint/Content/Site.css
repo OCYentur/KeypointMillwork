@@ -4,9 +4,16 @@
     margin:0;
     padding:0;
     font-family: 'Montserrat';
-    font-size:2.7vh;
+    font-size:2.4vh;
     letter-spacing:.1vh;
-    background:#fff;
+}
+
+#bg{
+    top:0;
+    left:0;
+    /*background:url(../Content/Images/introbg.png) 0 0vh  no-repeat;
+    background-size:cover;
+    background-attachment:fixed;*/
 }
 
 p{
@@ -70,6 +77,16 @@ img#sawy {
 .body-container {
 	display:none;
 }
+
+.bg-container {
+    width:100%;
+    margin:0;
+    padding:0;
+    z-index:-1;
+    background:#c32533;
+}
+.bg-container:nth-child(3){   background:#999898;   }
+.bg-container:nth-child(4){   background:#2477b2;   }
 
 #main-contentholder{
     width:100%;
@@ -150,22 +167,31 @@ img#sawy {
     background-color:rgba(0,0,0,.1);
 }
 
+#intro-carousel div{
+    height:100%;
+    width:100%;
+}
+
 #about{
-    margin:0;
+    margin:auto;
     padding:0;
-    padding-top:7vh;
+    padding-top:5vh;
     /*background:#c32533;*/
     color:#000;
-    height:102vh;   
+    height:100vh;  
+    width:80%; 
+    background:#fff;
 }
 
 #gallery{
-    margin:0;
-    margin-top:-1.8vh;
+    margin:auto;
+    /*margin-top:-1.8vh;*/
     padding:15vh 6vh 0 6vh;
     height:100vh;
+    width:80%;
     content:'';
     /*background:#999898;*/
+    background:#fff;
 }
 
 #gallery section img{
@@ -176,18 +202,22 @@ img#sawy {
 }
 
 #contact{
-    margin:0;
+    margin:auto;
     padding:0;
-    padding-top:7vh;
+    padding-top:5vh;
     /*background:#2477b2;*/
-    height:100vh;
-	background:silver;
+    height:97vh;
+    width:80%;
+    background:#fff;
 }
 
 footer {
-	margin:0;
+	margin:auto;
 	padding:0 3vh 0 3vh;
 	font-size:2vh;
+    width:80%;
+    text-align:right;
+    background:white;
 }
 
 /*                              */

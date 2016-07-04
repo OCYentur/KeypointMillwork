@@ -7,7 +7,8 @@
     <meta name="author" content="Omer Yentur" />
     <meta name="keywords" content="Keypoint, Millwork, Renovation, Kitchen, Countertop" />
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link rel="shortcut icon" type="image/ico" href="~/keypointicon.png">
+    <title>Keypoint Millwork - @ViewBag.Title </title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
@@ -30,28 +31,27 @@
     </script>
 </head>
 <body onload="init()">
-	<div id="loader" class="unselectable">
-		<img src="~/Content/Images/keypointlogo.png" />
-		<img id="sawx" src="~/Content/Images/keypointsaw.png" />
-		<img id="sawy" src="~/Content/Images/keypointsaw.png" />
-	</div>
-    <div id="head" class="unselectable">
-        <div id="logo">
-            <img src="~/Content/Images/keypoint1.png" />
+    <div id="bg">
+        <div id="loader" class="unselectable">
+            <img src="~/Content/Images/keypointlogo.png" />
+            <img id="sawx" src="~/Content/Images/keypointsaw.png" />
+            <img id="sawy" src="~/Content/Images/keypointsaw.png" />
         </div>
-        <div id="menu" class="">
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#gallery">Projects</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
+        <div id="head" class="unselectable">
+            <div id="logo">
+                <img src="~/Content/Images/keypoint1.png" />
+            </div>
+            <div id="menu" class="">
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#gallery">Projects</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <div class="body-container" data-scroll-speed="1">
-        @RenderBody()
-        <footer>
-            <div>&copy; @DateTime.Now.Year - Keypoint Millwork</div>
-        </footer>
+        <div class="body-container" data-scroll-speed="1">
+            @RenderBody()
+        </div>
     </div>
 	<script>
 		function init() {
@@ -71,10 +71,10 @@
 			$height = $(window).height();
 			$width = $(window).width();
 			if (scrollval > (($height * 20)/100)) {
-				$("#menu ul li").css({ padding: $(this).scrollTop() < scrollval ? "3.3vh" : "1vh" });
+			    $("#menu ul li").css({ padding: $(this).scrollTop() < scrollval ? "3.3vh" : "1.5vh" });
 			}
 			else {
-				$("#menu ul li").css({ padding: $(this).scrollTop() < scrollval ? "3.3vh" : "3.3vh" });
+			    $("#menu ul li").css({ padding: $(this).scrollTop() < scrollval ? "3.3vh" : "3.3vh" });
 			}
 		    if (scrollval < $height) {
 		    	$menu.css({ background: $(this).scrollTop() < scrollval ? "rgba(0,0,0,.1)" : "rgba(0,0,0,.1)" });		    	
@@ -83,10 +83,10 @@
 		        $menu.css({ background: $(this).scrollTop() < scrollval ? "rgba(0,0,0,.1)" : "rgba(0,0,0,.8)" });
 		    }
 		    else if (scrollval >= ($height * 2) && scrollval < ($height * 3)) {
-		        $menu.css({ background: $(this).scrollTop() < scrollval ? "rgba(0,0,0,.1)" : "rgba(255,0,0,.8)" });
+		        $menu.css({ background: $(this).scrollTop() < scrollval ? "rgba(0,0,0,.1)" : "rgba(152,152,152,.8)" });
 		    }
 		    else {
-		        $menu.css({ background: $(this).scrollTop() < scrollval ? "rgba(0,0,0,.1)" : "rgba(152,152,152,.8)" });
+		        $menu.css({ background: $(this).scrollTop() < scrollval ? "rgba(0,0,0,.1)" : "rgba(190,190,190,.8)" });
 		    }
 		});
 
