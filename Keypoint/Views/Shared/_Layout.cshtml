@@ -55,7 +55,7 @@
     </div>
 	<script>
 		function init() {
-			var x = setTimeout(load, 2000);
+		    var x = setTimeout(load, 2000);
 		}
 		function load() {
 			$(document).ready(function () {
@@ -77,16 +77,16 @@
 			    $("#menu ul li").css({ padding: $(this).scrollTop() < scrollval ? "3.3vh" : "3.3vh" });
 			}
 		    if (scrollval < $height) {
-		    	$menu.css({ background: $(this).scrollTop() < scrollval ? "rgba(0,0,0,.1)" : "rgba(0,0,0,.1)" });		    	
+		    	$menu.css({ background: $(this).scrollTop() < scrollval ? "rgba(0,0,0,0)" : "rgba(0,0,0,0)" });		    	
 		    }
 		    else if (scrollval >= $height && scrollval < ($height*2)) {
-		        $menu.css({ background: $(this).scrollTop() < scrollval ? "rgba(0,0,0,.1)" : "rgba(0,0,0,.8)" });
+		        $menu.css({ background: $(this).scrollTop() < scrollval ? "rgba(0,0,0,.1)" : "rgba(195,37,51,.9)" });
 		    }
 		    else if (scrollval >= ($height * 2) && scrollval < ($height * 3)) {
-		        $menu.css({ background: $(this).scrollTop() < scrollval ? "rgba(0,0,0,.1)" : "rgba(152,152,152,.8)" });
+		        $menu.css({ background: $(this).scrollTop() < scrollval ? "rgba(0,0,0,.1)" : "rgba(153,152,152,.9)" });
 		    }
 		    else {
-		        $menu.css({ background: $(this).scrollTop() < scrollval ? "rgba(0,0,0,.1)" : "rgba(190,190,190,.8)" });
+		        $menu.css({ background: $(this).scrollTop() < scrollval ? "rgba(0,0,0,.1)" : "rgba(36,119,178,.9)" });
 		    }
 		});
 

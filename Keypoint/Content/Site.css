@@ -8,6 +8,13 @@
     letter-spacing:.1vh;
 }
 
+html,body{
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+}
+
 #bg{
     top:0;
     left:0;
@@ -148,11 +155,12 @@ img#sawy {
     padding:4vh;
     text-decoration:none;
     color:white;
-    font-family:LeagueGothic;
+    /*font-family:LeagueGothic;*/
 }
 
 #menu ul li a:hover {
-    color:#c32533;
+    /*color:#c32533;*/
+    color:#000;
 }
 
 #intro{
@@ -203,12 +211,33 @@ img#sawy {
 
 #contact{
     margin:auto;
-    padding:0;
-    padding-top:5vh;
+    padding:10vh;
     /*background:#2477b2;*/
     height:97vh;
     width:80%;
     background:#fff;
+}
+
+#contact img{
+    height:35vh;
+    width:45%;
+    float:left;
+    object-fit:cover;
+}
+
+#address,#email,#phone{
+    float:left;    
+    display:block;
+    text-align:center;
+    width:50%;
+}
+
+#mapcontainer{
+    width:100%;
+    height:45vh;
+    background:silver;
+    float:left;
+    margin-top:1%;
 }
 
 footer {
